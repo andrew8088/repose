@@ -6,17 +6,17 @@ I like tinkering with front-end frameworks, and I found myself writing the same,
 
 ## Install
 
-  npm install repose
+    npm install repose
 
 ## Usage
 
 There's one function: `repose`. It needs a single parameter: the name of your API's model. It returns an express server object.
 
-  var repose = require('repose');
+    var repose = require('repose');
 
-  var app = repose('animals');
+    var app = repose('animals');
 
-  app.listen(3000);
+    app.listen(3000);
 
 This creates a server with the these routes:
 
@@ -28,15 +28,15 @@ This creates a server with the these routes:
 
 This will work perfectly with Backbone:
 
-  var Animals = Backbone.Collection.extend({
-    url: '/api/animals'  
-  });
+    var Animals = Backbone.Collection.extend({
+        url: '/api/animals'  
+    });
 
 ## The Public Folder
 
 A Repose "app" will serve the `./public` directory by default. If you want to change that, pass the path as a second parameter (a relative path will do).
 
-  var app = repose('animals', './myPublicFolder');
+    var app = repose('animals', './myPublicFolder');
 
 ## TODO
 
