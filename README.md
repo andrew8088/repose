@@ -26,7 +26,7 @@ This creates a server with the these routes:
 - `PUT /api/animals/<id>`
 - `DELETE /api/animals/<id>`
 
-This will work perfectly with Backbone:
+This will work perfectly with Backbone (et al.):
 
     var Animals = Backbone.Collection.extend({
         url: '/api/animals'  
